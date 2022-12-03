@@ -6,7 +6,7 @@
 /*   By: nstoutze <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 11:23:50 by nstoutze          #+#    #+#             */
-/*   Updated: 2022/11/30 12:25:57 by nstoutze         ###   ########.fr       */
+/*   Updated: 2022/12/02 13:52:14 by nstoutze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,15 +56,16 @@ int	ft_printf(const char *s, ...)
 	va_end(arg);
 	return (written);
 }
-/*
+
 #include <limits.h>
 #include <stdio.h>
 int main()
 {
+	/*
 	int res = ft_printf("coucou %      \nlol\n");
     int res2 = printf  ("coucou %      \nlol\n");
 	printf("\n");
-	
+	*/
 	int res3 = ft_printf("%d%d\n", 0, 21);
     int res4 = printf   ("%d%d\n", 0, 21);
 	printf("\n");
@@ -104,16 +105,17 @@ int main()
 	int res20 = printf   ("%p\n", nullstring2);
 	printf("\n");
 
-	int res21 = ft_printf("ft_printf %%%%%\n");
-	int res22 = printf   ("000printf %%%%%\n");
+	/*
+	int res21 = ft_printf("ft_printf % ");
+	int res22 = printf   ("000printf % ");
 	printf("\n");
-
+	*/
 	int res23 = ft_printf("en hexa : %x\n", UINT_MAX);
 	int res24 = printf   ("en hexa : %x\n", UINT_MAX);
     printf("\n");
 
-	if (res != res2)
-		printf("\nres = %d\nres2 = %d\n", res, res2);
+	//if (res != res2)
+	//	printf("\nres = %d\nres2 = %d\n", res, res2);
 	if (res3 != res4)
         printf("\nres3 = %d\nres4 = %d\n", res3, res4);
 	if (res5 != res6)
@@ -132,10 +134,9 @@ int main()
         printf("\nres17 = %d\nres18 = %d\n", res17, res18);
 	if (res19 != res20)
         printf("\nres19 = %d\nres20 = %d\n", res19, res20);
-	if (res21 != res22)
-        printf("\nres21 = %d\nres22 = %d\n", res21, res22);
+	//if (res21 != res22)
+    //    printf("\nres21 = %d\nres22 = %d\n", res21, res22);
 	if (res23 != res24)
         printf("\nres23 = %d\nres24 = %d\n", res23, res24);
     return 0;
 }
-*/
