@@ -6,7 +6,7 @@
 /*   By: nstoutze <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 11:23:50 by nstoutze          #+#    #+#             */
-/*   Updated: 2022/12/02 13:52:14 by nstoutze         ###   ########.fr       */
+/*   Updated: 2022/12/06 16:22:55 by nstoutze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,16 +56,16 @@ int	ft_printf(const char *s, ...)
 	va_end(arg);
 	return (written);
 }
-
+/*
 #include <limits.h>
 #include <stdio.h>
 int main()
 {
-	/*
+	
 	int res = ft_printf("coucou %      \nlol\n");
     int res2 = printf  ("coucou %      \nlol\n");
 	printf("\n");
-	*/
+
 	int res3 = ft_printf("%d%d\n", 0, 21);
     int res4 = printf   ("%d%d\n", 0, 21);
 	printf("\n");
@@ -105,11 +105,11 @@ int main()
 	int res20 = printf   ("%p\n", nullstring2);
 	printf("\n");
 
-	/*
+	
 	int res21 = ft_printf("ft_printf % ");
 	int res22 = printf   ("000printf % ");
 	printf("\n");
-	*/
+	
 	int res23 = ft_printf("en hexa : %x\n", UINT_MAX);
 	int res24 = printf   ("en hexa : %x\n", UINT_MAX);
     printf("\n");
@@ -140,3 +140,4 @@ int main()
         printf("\nres23 = %d\nres24 = %d\n", res23, res24);
     return 0;
 }
+*/
